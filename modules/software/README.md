@@ -18,6 +18,7 @@ This module is used to install all software for my setup.
 ### What software affects
 
 This module will download the latest TeamViewer executable and install it.
+This module will make sure vim is installed.
 
 ### Beginning with software
 
