@@ -7,15 +7,15 @@
 class nvidia {
   require 'repositories::rpmfusion'
   package { 'xorg-x11-drv-nvidia':
-    name   => "xorg-x11-drv-nvidia",
-    ensure => "present",
+    ensure => 'present',
+    name   => 'xorg-x11-drv-nvidia',
   }
   package { 'akmod-nvidia':
-    name   => "akmod-nvidia",
-    ensure => "present",
+    ensure => 'present',
+    name   => 'akmod-nvidia',
   }
   package { 'xorg-x11-drv-nvidia-cuda':
-    name   => "xorg-x11-drv-nvidia-cuda",
-    ensure => "present",
+    ensure => 'present',
+    name   => 'xorg-x11-drv-nvidia-cuda',
   }
 }

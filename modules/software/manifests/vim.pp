@@ -6,7 +6,7 @@
 #   include software::vim
 class software::vim {
   package { 'vim':
-    ensure   => "present",
-    provider => "dnf",
+    ensure   => 'present',
+    provider => 'dnf',
   }
 }

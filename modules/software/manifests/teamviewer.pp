@@ -6,12 +6,12 @@
 #   include software::teamviewer
 class software::teamviewer {
   exec { 'teamviewer':
-    command => "/usr/bin/dnf install -y https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm",
-    user    => "root",
+    command => '/usr/bin/dnf install -y https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm',
+    user    => 'root',
   }
   service { 'teamviewerd':
-    ensure   => "running",
-    enable   => "true",
-    provider => "systemd",
+    ensure   => 'running',
+    enable   => 'true',
+    provider => 'systemd',
   }
 }
