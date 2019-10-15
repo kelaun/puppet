@@ -5,9 +5,11 @@
 # @example
 #   include software::teamviewer
 class software::teamviewer {
-  exec { 'teamviewer':
-    command => '/usr/bin/dnf install -y https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm',
-    user    => 'root',
+  package { 'teamviewer':
+    ensure   => 'installed',
+    source   => 'https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm',
+    provider => 'rpm',
+    notify   => Service['teamviewerd'],
   }
   service { 'teamviewerd':
     ensure   => 'running',
