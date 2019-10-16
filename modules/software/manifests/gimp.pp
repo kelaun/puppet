@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::vim
-class software::vim {
-  package { 'vim':
-    ensure   => 'present',
+#   include software::gimp
+class software::gimp {
+  package { 'gimp':
+    ensure => 'present',
   }
 }
