@@ -18,7 +18,8 @@ This module enables external repositories on a Fedora 30 installation.
 
 ### What repositories affects
 
-This will install the RPMFusion repositories and enable them.
+This will install the RPMFusion repositories and enable them.</br>
+This will enable the signal-desktop copr repository.
 
 ### Setup Requirements
 
@@ -30,8 +31,8 @@ Simply clone the repository and you're good to go.
 
 ## Usage
 
-Only use this if you need RPMFusion repositories for some software.
-The best way to use this module is to require it inside the module that will install software from it as otherwise RPMFusion is not needed.
+Only use this if you need the repositories for some software.
+The best way to use this module is to require it inside the module that will install software from it as otherwise the repositories are not needed.
 
 ## Limitations
 
