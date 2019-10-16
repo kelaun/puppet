@@ -26,4 +26,5 @@ class software {
   include software::totem
   include software::gnomeweather
   include software::pavucontrol
+  include software::remmina
 }
