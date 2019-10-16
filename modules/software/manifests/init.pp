@@ -25,4 +25,5 @@ class software {
   include software::simplescan
   include software::totem
   include software::gnomeweather
+  include software::pavucontrol
 }
