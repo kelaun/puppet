@@ -27,4 +27,5 @@ class software {
   include software::gnomeweather
   include software::pavucontrol
   include software::remmina
+  include software::mega
 }
