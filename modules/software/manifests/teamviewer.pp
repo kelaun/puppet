@@ -15,6 +15,6 @@ class software::teamviewer {
     ensure   => 'running',
     enable   => 'true',
     provider => 'systemd',
-    require  => Exec['teamviewer'],
+    require  => Package['teamviewer'],
   }
 }
