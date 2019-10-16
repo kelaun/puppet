@@ -17,8 +17,34 @@ This module is used to install all software for my setup.
 
 ### What software affects
 
-This module will download the latest TeamViewer executable and install it.
-This module will make sure vim is installed.
+This module will install the following software:
+* Brave browser
+* Darktable
+* Gimp
+* Mega
+* Pavucontrol
+* Remmina
+* Signal
+* Snap
+* Spotify
+* Steam
+* Teamviewer
+* vim
+* vlc
+
+This module will remove the following software:
+* Cheese
+* Firefox
+* Gnome Boxes
+* Gnome Calendar
+* Gnome Clocks
+* Gnome Contacts
+* Gnome Maps
+* Gnome Photos
+* Gnome Weather
+* Rhythmbox
+* Simple Scan
+* Totem
 
 ### Beginning with software
 
