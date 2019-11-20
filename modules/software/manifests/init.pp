@@ -30,4 +30,5 @@ class software {
   include software::mega
   include software::signal
   include software::cmake
+  include software::masterpassword
 }
