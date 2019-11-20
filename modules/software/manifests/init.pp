@@ -29,4 +29,5 @@ class software {
   include software::remmina
   include software::mega
   include software::signal
+  include software::cmake
 }
