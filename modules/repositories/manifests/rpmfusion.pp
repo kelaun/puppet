@@ -7,13 +7,13 @@
 class repositories::rpmfusion {
   package { 'freerepo':
     ensure          => 'present',
-    source          => 'https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-30.noarch.rpm',
+    source          => 'https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-31.noarch.rpm',
     provider        => 'rpm',
     install_options => '--force',
   }
   package { 'nonfreerepo':
     ensure          => 'present',
-    source          => 'https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-30.noarch.rpm',
+    source          => 'https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-31.noarch.rpm',
     provider        => 'rpm',
     install_options => '--force',
   }
