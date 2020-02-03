@@ -5,14 +5,7 @@
 # @example
 #   include software::brave
 class software::brave {
-  yumrepo { 'braverepo':
-    descr   => 'brave',
-    baseurl => 'https://brave-browser-rpm-release.s3.brave.com/x86_64/',
-    gpgkey  => 'https://brave-browser-rpm-release.s3.brave.com/brave-core.asc',
-    enabled => '1',
-  }
-  package { 'brave-browser':
+  package { 'brave':
     ensure  => 'present',
-    require => Yumrepo['braverepo'],
   }
 }

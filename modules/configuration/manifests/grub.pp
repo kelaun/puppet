@@ -14,7 +14,7 @@ class configuration::grub {
     source => 'puppet:///modules/configuration/grub',
   }
   exec { 'refresh_grub':
-    command     => '/usr/sbin/grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg',
+    command     => '/usr/bin/grub-mkconfig -o /boot/grub/grub.cfg',
     subscribe   => File['grub'],
     refreshonly => 'true',
   }

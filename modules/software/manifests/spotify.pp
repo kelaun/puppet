@@ -5,9 +5,9 @@
 # @example
 #   include software::spotify
 class software::spotify {
-  require software::snap
   exec { 'spotify':
-    command => '/usr/bin/snap install spotify',
-    creates => '/var/lib/snapd/snap/bin/spotify',
+    command => '/usr/bin/echo 1 | /usr/bin/yay --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu -S spotify',
+    unless  => '/usr/bin/pacman -Qi spotify',
+    user    => 'kelaun',
   }
 }

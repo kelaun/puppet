@@ -5,16 +5,15 @@
 # @example
 #   include software::teamviewer
 class software::teamviewer {
-  package { 'teamviewer':
-    ensure   => 'installed',
-    source   => 'https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm',
-    provider => 'rpm',
-    notify   => Service['teamviewerd'],
+  exec { 'teamviewer':
+    command => '/usr/bin/yes "" | /usr/bin/yay --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu -S teamviewer',
+    unless  => '/usr/bin/pacman -Qi teamviewer',
+    user    => 'kelaun',
   }
   service { 'teamviewerd':
     ensure   => 'running',
     enable   => 'true',
     provider => 'systemd',
-    require  => Package['teamviewer'],
+    require  => Exec['teamviewer'],
   }
 }
