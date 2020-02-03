@@ -8,4 +8,5 @@ class configuration {
   include configuration::bash
   include configuration::grub
   include configuration::i3
+  include configuration::xresources
 }
