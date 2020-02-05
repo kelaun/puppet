@@ -16,4 +16,15 @@ class software {
   include software::cmake
   include software::oomox
   include software::gotop
+  include software::palemoon
+  include software::vibrancyicons
+  include software::matchatheme
+  include software::wallpapersjuhraya
+  include software::deluge
+  include software::zsh
+  include software::hexchat
+  include software::manjarohello
+  include software::screenfetch
+  include software::speedtest
+  include software::moc
 }

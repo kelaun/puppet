@@ -24,6 +24,7 @@ alias upgrade='yay -Syu'
 alias install='yay -S'
 alias remove='yay -Rns'
 alias search='yay'
+alias clean='exec /home/kelaun/Git/packsize/packsize'
 
 ## Terminal prompt
 PS1='\W > '
