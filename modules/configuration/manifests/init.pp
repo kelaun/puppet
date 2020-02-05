@@ -9,4 +9,7 @@ class configuration {
   include configuration::grub
   include configuration::i3
   include configuration::xresources
+  include configuration::dunst
+  include configuration::dmenu
+  include configuration::i3status
 }

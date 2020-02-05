@@ -14,4 +14,6 @@ class software {
   include software::steam
   include software::mega
   include software::cmake
+  include software::oomox
+  include software::gotop
 }

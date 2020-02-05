@@ -5,7 +5,7 @@
 # @example
 #   include software::steam
 class software::steam {
-  package { 'steam-native':
+  package { 'steam-manjaro':
     ensure => 'present',
   }
 }

@@ -19,11 +19,11 @@ export PATH
 
 ## Aliases
 alias ls='ls --color=auto'
-alias update='sudo dnf update'
-alias upgrade='sudo dnf update'
-alias install='sudo dnf install'
-alias remove='sudo dnf remove'
-alias search='sudo dnf search'
+alias update='yay -Syy'
+alias upgrade='yay -Syu'
+alias install='yay -S'
+alias remove='yay -Rns'
+alias search='yay'
 
 ## Terminal prompt
 PS1='\W > '
