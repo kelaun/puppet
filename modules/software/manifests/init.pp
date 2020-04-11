@@ -27,4 +27,5 @@ class software {
   include software::screenfetch
   include software::speedtest
   include software::moc
+  include software::firefox
 }
