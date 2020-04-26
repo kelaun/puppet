@@ -28,4 +28,5 @@ class software {
   include software::speedtest
   include software::moc
   include software::firefox
+  include software::signal
 }
