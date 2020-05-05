@@ -29,4 +29,5 @@ class software {
   include software::moc
   include software::firefox
   include software::signal
+  include software::tuxedocontrolcenter
 }
