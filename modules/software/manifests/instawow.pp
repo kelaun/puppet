@@ -1,0 +1,12 @@
+# @summary A short summary of the purpose of this class
+#
+# A description of what this class does
+#
+# @example
+#   include software::instawow
+class software::instawow {
+  package { 'instawow':
+    ensure   => latest,
+    provider => pip3,
+  }
+}

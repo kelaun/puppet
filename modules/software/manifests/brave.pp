@@ -6,6 +6,6 @@
 #   include software::brave
 class software::brave {
   package { 'brave':
-    ensure  => 'present',
+    ensure  => latest,
   }
 }

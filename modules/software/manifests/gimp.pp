@@ -6,6 +6,6 @@
 #   include software::gimp
 class software::gimp {
   package { 'gimp':
-    ensure => 'present',
+    ensure => latest,
   }
 }

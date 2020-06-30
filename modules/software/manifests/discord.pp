@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::signal
-class software::signal {
-  package { 'signal-desktop':
+#   include software::discord
+class software::discord {
+  package { 'discord': 
     ensure => latest,
   }
 }

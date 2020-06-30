@@ -19,11 +19,17 @@ export PATH
 
 ## Aliases
 alias ls='ls --color=auto'
+alias wowls='instawow list'
 alias update='yay -Syy'
-alias upgrade='yay -Syu'
+alias wowupdate='instawow update'
+alias upgrade='yay -Syu; instawow update'
+alias wowupgrade='instawow update'
 alias install='yay -S'
+alias wowinstall='instawow install'
 alias remove='yay -Rns'
+alias wowremove='instawow remove'
 alias search='yay'
+alias wowsearch='instawow search'
 alias clean='exec /home/kelaun/Git/packsize/packsize'
 
 ## Terminal prompt

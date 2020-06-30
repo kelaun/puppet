@@ -6,6 +6,6 @@
 #   include software::firefox
 class software::firefox {
   package { 'firefox':
-    ensure => 'present',
+    ensure => latest,
   }
 }

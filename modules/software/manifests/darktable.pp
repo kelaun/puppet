@@ -6,6 +6,6 @@
 #   include software::darktable
 class software::darktable {
   package { 'darktable':
-    ensure => 'present',
+    ensure => latest,
   }
 }

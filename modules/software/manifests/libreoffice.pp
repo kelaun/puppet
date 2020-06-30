@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::tuxedocontrolcenter
-class software::tuxedocontrolcenter {
-  package { 'tuxedo-control-center':
+#   include software::libreoffice
+class software::libreoffice {
+  package { 'libreoffice-still':
     ensure => absent,
   }
 }
