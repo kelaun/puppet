@@ -12,4 +12,5 @@ class configuration {
   include configuration::dunst
   include configuration::dmenu
   include configuration::i3status
+  include configuration::firefox
 }
