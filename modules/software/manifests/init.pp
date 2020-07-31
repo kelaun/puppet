@@ -45,4 +45,5 @@ class software {
   include software::onlyoffice
   include software::pacwall
   include software::transmission
+  include software::tlp
 }
