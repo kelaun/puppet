@@ -18,6 +18,7 @@ class configuration::firefox {
   }
 
   file { 'userChrome.css':
+    path    => '/home/kelaun/.mozilla/firefox/jf1r0b1x.default-release/chrome/userChrome.css',
     ensure  => present,
     owner   => 'kelaun',
     group   => 'kelaun',
