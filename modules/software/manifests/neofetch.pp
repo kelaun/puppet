@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::wps
-class software::wps {
-  package { 'wps-office':
-    ensure => absent,
+#   include software::neofetch
+class software::neofetch {
+  package { 'neofetch':
+    ensure => installed,
   }
 }

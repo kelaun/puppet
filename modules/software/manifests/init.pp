@@ -37,4 +37,12 @@ class software {
   include software::rofi
   include software::instawow
   include software::redshift
+  include software::iosevka
+  include software::dejavu
+  include software::lutris
+  include software::manjarosettingsmanager
+  include software::neofetch
+  include software::onlyoffice
+  include software::pacwall
+  include software::transmission
 }
