@@ -6,16 +6,16 @@
 DMENU_FN="IosevkaTerm-10.5"
 
 ## background colour for unselected menu-items
-DMENU_NB="#000000"
+DMENU_NB="#232323"
 
 ## textcolour for unselected menu-items
-DMENU_NF="#fcfcfc"
+DMENU_NF="#e7e7e7"
 
 ## background colour for selected menu-items
-DMENU_SB="#fcfcfc"
+DMENU_SB="#e7e7e7"
 
 ## textcolour for selected menu-items
-DMENU_SF="#000000"
+DMENU_SF="#232323"
 
 ## command for the terminal application to be used:
 TERMINAL_CMD="terminal -e"
