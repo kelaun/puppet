@@ -46,4 +46,5 @@ class software {
   include software::pacwall
   include software::transmission
   include software::tlp
+  include software::aurafetch
 }

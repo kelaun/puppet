@@ -6,6 +6,6 @@
 #   include software::neofetch
 class software::neofetch {
   package { 'neofetch':
-    ensure => installed,
+    ensure => absent,
   }
 }
