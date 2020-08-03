@@ -47,4 +47,5 @@ class software {
   include software::transmission
   include software::tlp
   include software::aurafetch
+  include software::spicetify
 }
