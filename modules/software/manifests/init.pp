@@ -48,4 +48,5 @@ class software {
   include software::tlp
   include software::aurafetch
   include software::spicetify
+  include software::timeshift
 }
