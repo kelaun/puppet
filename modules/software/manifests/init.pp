@@ -49,4 +49,5 @@ class software {
   include software::aurafetch
   include software::spicetify
   include software::timeshift
+  include software::vscode
 }
