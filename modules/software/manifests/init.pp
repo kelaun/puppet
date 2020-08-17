@@ -50,4 +50,9 @@ class software {
   include software::spicetify
   include software::timeshift
   include software::vscode
+  include software::paprefs
+  include software::mpv
+  include software::packsize
+  include software::polybar
+  include software::spectrwm
 }

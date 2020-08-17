@@ -13,4 +13,6 @@ class configuration {
   include configuration::dmenu
   include configuration::i3status
   include configuration::firefox
+  include configuration::pacman
+  include configuration::spectrwm
 }

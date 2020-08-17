@@ -5,12 +5,7 @@
 # @example
 #   include configuration::i3status
 class configuration::i3status {
-  file { 'i3status':
-    ensure => 'present',
-    path   => '/etc/i3status.conf',
-    group  => 'root',
-    mode   => '0644',
-    owner  => 'root',
-    source => 'puppet:///modules/configuration/i3status',
+  file { '/etc/i3status.conf':
+    ensure => absent,
   }
 }

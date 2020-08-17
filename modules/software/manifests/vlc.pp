@@ -6,6 +6,6 @@
 #   include software::vlc
 class software::vlc {
   package { 'vlc':
-    ensure => latest,
+    ensure => absent,
   }
 }

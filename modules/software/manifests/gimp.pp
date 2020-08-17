@@ -8,4 +8,16 @@ class software::gimp {
   package { 'gimp':
     ensure => latest,
   }
+  package { 'gimp-help-fr':
+    ensure  => absent,
+    require => Package['gimp'],
+  }
+  package { 'gimp-help-nl':
+    ensure  => absent,
+    require => Package['gimp'],
+  }
+  package { 'gimp-help-en':
+    ensure  => absent,
+    require => Package['gimp'],
+  }
 }

@@ -109,10 +109,20 @@ set $ws8 8
 set $ws9 9
 set $ws10 10
 
+# Setting workspaces on specific displays
+set $leftscreen DP-0
+set $rightscreen DP-2
+set $middlescreen DP-4
+
+workspace $ws1 output $leftscreen
+workspace $ws2 output $middlescreen
+workspace $ws3 output $rightscreen
+
+
 # switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
+bindsym $mod+1 workspace $ws3; workspace $ws2; workspace $ws1
+bindsym $mod+2 workspace $ws3; workspace $ws1; workspace $ws2
+bindsym $mod+3 workspace $ws1; workspace $ws2; workspace $ws3
 bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace $ws6
@@ -134,9 +144,9 @@ bindsym $mod+Ctrl+9 move container to workspace $ws9
 bindsym $mod+Ctrl+0 move container to workspace $ws10
 
 # Move to workspace with focused container
-bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws3; workspace $ws2; workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws3; workspace $ws1; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws1; workspace $ws2; workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
 bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
@@ -241,6 +251,7 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id redshift-gtk -l 50.85045:4.34878 -t 6500:3600
 exec --no-startup-id /home/kelaun/.screenlayout/desktop.sh
+exec --no-startup-id autokey-gtk
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -371,4 +382,3 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-

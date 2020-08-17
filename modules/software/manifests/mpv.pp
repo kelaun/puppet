@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include configuration::i3
-class configuration::i3 {
-  file { '/home/kelaun/.i3/config':
-    ensure => absent,
+#   include software::mpv
+class software::mpv {
+  package { 'mpv':
+    ensure => installed,
   }
 }

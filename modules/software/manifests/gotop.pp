@@ -5,9 +5,7 @@
 # @example
 #   include software::gotop
 class software::gotop {
-  exec { 'gotop':
-    command => '/usr/bin/yes "" | /usr/bin/yay --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu -S gotop',
-    unless  => '/usr/bin/pacman -Qi gotop',
-    user    => 'kelaun',
+  package { 'gotop':
+    ensure => absent,
   }
 }
