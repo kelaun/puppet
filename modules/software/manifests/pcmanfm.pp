@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::gimp
-class software::gimp {
-  package { 'gimp':
-    ensure => absent,
+#   include software::pcmanfm
+class software::pcmanfm {
+  package { 'pcmanfm':
+    ensure => installed,
   }
 }

@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::wps
-class software::wps {
-  package { 'wps-office':
+#   include software::weechat
+class software::weechat {
+  package { 'weechat':
     ensure => installed,
   }
 }

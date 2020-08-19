@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::onlyoffice
-class software::onlyoffice {
-  package { 'onlyoffice-bin':
+#   include software::lxappearence
+class software::lxappearence {
+  package { 'lxappearance':
     ensure => installed,
   }
 }

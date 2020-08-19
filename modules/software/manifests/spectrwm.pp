@@ -14,9 +14,6 @@ class software::spectrwm {
   package { 'dunst':
     ensure => installed,
   }
-  package { 'dunstify':
-    ensure => installed,
-  }
   package { 'giblib':
     ensure => installed,
   }
@@ -30,9 +27,6 @@ class software::spectrwm {
     ensure => installed,
   }
   package { 'libxnvctrl':
-    ensure => installed,
-  }
-  package { 'manjaro-base-skel':
     ensure => installed,
   }
   package { 'nitrogen':

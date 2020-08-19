@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::onlyoffice
-class software::onlyoffice {
-  package { 'onlyoffice-bin':
+#   include software::arandr
+class software::arandr {
+  package { 'arandr':
     ensure => installed,
   }
 }

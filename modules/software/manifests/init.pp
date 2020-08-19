@@ -28,7 +28,6 @@ class software {
   include software::signal
   include software::tuxedocontrolcenter
   include software::discord
-  include software::wps
   include software::libreoffice
   include software::greenwithenvy
   include software::rofi
@@ -48,6 +47,12 @@ class software {
   include software::paprefs
   include software::mpv
   include software::packsize
-  include software::polybar
   include software::spectrwm
+  include software::dunst
+  include software::cron
+  include software::dmenu
+  include software::arandr
+  include software::pcmanfm
+  include software::lxappearence
+  include software::weechat
 }

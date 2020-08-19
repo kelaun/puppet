@@ -3,16 +3,14 @@
 # A description of what this class does
 #
 # @example
-#   include software::paprefs
-class software::paprefs {
-  package { 'paprefs':
-    ensure => installed,
-  }
-  file { '/home/kelaun/.local/bin/volume.sh':
+#   include software::dmenu
+class software::dmenu {
+  file { 'dmenu-options':
     ensure => present,
+    path   => '/home/kelaun/.local/bin/dmenu.sh',
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0777',
-    source => 'puppet:///modules/software/volume.sh',
+    source => 'puppet:///modules/software/dmenu.sh',
   }
 }

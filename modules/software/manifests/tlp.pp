@@ -13,7 +13,7 @@ class software::tlp {
     enable  => true,
     require => Package['tlp'],
   }
-  package { 'tlpui':
+  package { 'tlpui-git':
     ensure  => installed,
     require => Service['tlp.service'],
   }
