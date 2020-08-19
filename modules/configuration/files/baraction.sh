@@ -10,7 +10,6 @@ RESULT="$(case $AMOUNT in
   ''|*[!0-9]*) echo up-to-date ;; 
   *) echo "$AMOUNT updates" ;; 
 esac)"
-# STATE="$(if [$AMOUNT == "Your"; then echo up-to-date; else echo "$AMOUNT updates"; fi)"
 
 # NETWORK
 NETSTAT="$(nmcli -p | grep wlo1 | head -1 | awk '{ print $2 }')"

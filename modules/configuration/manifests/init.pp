@@ -7,11 +7,9 @@
 class configuration {
   include configuration::bash
   include configuration::grub
-  include configuration::i3
   include configuration::xresources
   include configuration::dunst
   include configuration::dmenu
-  include configuration::i3status
   include configuration::firefox
   include configuration::pacman
   include configuration::spectrwm

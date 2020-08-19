@@ -5,7 +5,7 @@
 # @example
 #   include software::steam
 class software::steam {
-  package { 'steam-manjaro':
+  package { 'steam':
     ensure => latest,
   }
 }

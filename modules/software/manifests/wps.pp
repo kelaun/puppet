@@ -6,6 +6,6 @@
 #   include software::wps
 class software::wps {
   package { 'wps-office':
-    ensure => absent,
+    ensure => installed,
   }
 }

@@ -6,7 +6,6 @@
 #   include software
 class software {
   include software::teamviewer
-  include software::brave
   include software::spotify
   include software::darktable
   include software::gimp
@@ -46,7 +45,6 @@ class software {
   include software::pacwall
   include software::transmission
   include software::tlp
-  include software::aurafetch
   include software::spicetify
   include software::timeshift
   include software::vscode
