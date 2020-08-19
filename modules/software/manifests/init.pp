@@ -17,12 +17,10 @@ class software {
   include software::gotop
   include software::palemoon
   include software::vibrancyicons
-  include software::matchatheme
   include software::wallpapersjuhraya
   include software::deluge
   include software::zsh
   include software::hexchat
-  include software::manjarohello
   include software::screenfetch
   include software::speedtest
   include software::moc
@@ -39,7 +37,6 @@ class software {
   include software::iosevka
   include software::dejavu
   include software::lutris
-  include software::manjarosettingsmanager
   include software::neofetch
   include software::onlyoffice
   include software::pacwall
