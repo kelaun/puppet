@@ -36,6 +36,7 @@
   --panel-disabled-color: #f9f9fa80;
   --toolbar-bgcolor: var(--mff-bg) !important;
   --urlbar-separator-color: transparent !important;
+  --newtab-background-color: var(--mff-bg) !important
 }
 
 /*

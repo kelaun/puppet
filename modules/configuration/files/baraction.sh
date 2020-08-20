@@ -4,10 +4,10 @@
 while :; do
 
 # UPDATES
-AMOUNT="$(pamac checkupdates | awk '{ print $1 }' | head -1)"
+AMOUNT="$(yay -Qu | wc -l)"
 RESULT="$(case $AMOUNT in
   1) echo "$AMOUNT update" ;;
-  ''|*[!0-9]*) echo up-to-date ;; 
+  0) echo up-to-date ;; 
   *) echo "$AMOUNT updates" ;; 
 esac)"
 

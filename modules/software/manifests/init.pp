@@ -55,4 +55,7 @@ class software {
   include software::pcmanfm
   include software::lxappearence
   include software::weechat
+  include software::gparted
+  include software::akm
+  include software::wps
 }

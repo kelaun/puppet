@@ -1,7 +1,8 @@
 # GRUB boot loader configuration
 
-GRUB_DEFAULT=0
-GRUB_TIMEOUT=0
+GRUB_SAVEDEFAULT=true
+GRUB_DEFAULT=saved
+GRUB_TIMEOUT=1
 GRUB_DISTRIBUTOR="EndeavourOS"
 GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 nowatchdog"
 GRUB_CMDLINE_LINUX=""

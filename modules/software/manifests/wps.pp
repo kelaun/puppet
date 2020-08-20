@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::onlyoffice
-class software::onlyoffice {
-  package { 'onlyoffice-bin':
-    ensure => absent,
+#   include software::wps
+class software::wps {
+  package { 'wps-office':
+    ensure => installed,
   }
 }
