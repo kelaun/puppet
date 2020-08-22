@@ -13,4 +13,13 @@ class software::dmenu {
     mode   => '0777',
     source => 'puppet:///modules/software/dmenu.sh',
   }
+
+  file { 'dmenu_recency':
+    ensure => present,
+    path   => '/home/kelaun/.local/bin/dmenu-recency.sh',
+    owner  => 'kelaun',
+    group  => 'kelaun',
+    mode   => '0777',
+    source => 'puppet:///modules/software/dmenu-recency.sh',
+  }
 }
