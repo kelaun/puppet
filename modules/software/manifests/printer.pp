@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::spicetify
-class software::spicetify {
-  package { 'spicetify-cli':
+#   include software::printer
+class software::printer {
+  package { 'system-config-printer':
     ensure => absent,
   }
 }

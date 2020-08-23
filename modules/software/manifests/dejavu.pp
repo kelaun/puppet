@@ -6,6 +6,6 @@
 #   include software::dejavu
 class software::dejavu {
   package { 'ttf-dejavu':
-    ensure => installed,
+    ensure => absent,
   }
 }

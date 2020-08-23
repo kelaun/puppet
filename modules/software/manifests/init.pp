@@ -58,4 +58,47 @@ class software {
   include software::gparted
   include software::akm
   include software::wps
+  include software::telegram
+  include software::go
+  include software::rust
+  include software::noto
+  include software::arc
+  include software::foomatic
+  include software::capitaine
+  include software::hplip
+  include software::gutenprint
+  include software::kio
+  include software::doxygen
+  include software::qt5
+  include software::glmark2
+  include software::vala
+  include software::gtop
+  include software::modemmanager
+  include software::glances
+  include software::gnu
+  include software::printer
+  include software::croscore
+  include software::mplayer
+  include software::swig
+  include software::liberation
+  include software::ubuntu
+  include software::fileroller
+  include software::carlito
+  include software::paper
+  include software::libqmi
+  include software::nodejs
+  include software::gnome
+  include software::lirc
+  include software::parallel
+  include software::openconnect
+  include software::kde
+  include software::xfce4
+  include software::caladea
+  include software::leafpad
+  include software::welcome
+  include software::nano
+  include software::blueberry
+  include software::networkmanager
+  include software::xterm
+  include software::endeavour
 }

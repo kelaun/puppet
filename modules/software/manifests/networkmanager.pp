@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::spicetify
-class software::spicetify {
-  package { 'spicetify-cli':
+#   include software::networkmanager
+class software::networkmanager {
+  package { 'networkmanager-openvpn':
     ensure => absent,
   }
 }

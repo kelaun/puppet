@@ -6,7 +6,7 @@
 #   include software::paprefs
 class software::paprefs {
   package { 'paprefs':
-    ensure => installed,
+    ensure => absent,
   }
   file { '/home/kelaun/.local/bin/volume.sh':
     ensure => present,

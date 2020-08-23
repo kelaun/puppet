@@ -3,9 +3,12 @@
 # A description of what this class does
 #
 # @example
-#   include software::spicetify
-class software::spicetify {
-  package { 'spicetify-cli':
+#   include software::qt5
+class software::qt5 {
+  package { 'qt5-tools':
+    ensure => absent,
+  }
+  package { 'qt5ct':
     ensure => absent,
   }
 }

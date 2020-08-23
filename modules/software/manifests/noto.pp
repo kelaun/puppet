@@ -3,9 +3,12 @@
 # A description of what this class does
 #
 # @example
-#   include software::spicetify
-class software::spicetify {
-  package { 'spicetify-cli':
+#   include software::noto
+class software::noto {
+  package { 'noto-fonts-cjk':
+    ensure => absent,
+  }
+  package { 'noto-fonts':
     ensure => absent,
   }
 }

@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::spicetify
-class software::spicetify {
-  package { 'spicetify-cli':
+#   include software::ubuntu
+class software::ubuntu {
+  package { 'ttf-ubuntu-font-family':
     ensure => absent,
   }
 }

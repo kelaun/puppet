@@ -6,6 +6,6 @@
 #   include software::weechat
 class software::weechat {
   package { 'weechat':
-    ensure => installed,
+    ensure => absent,
   }
 }

@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::spicetify
-class software::spicetify {
-  package { 'spicetify-cli':
-    ensure => absent,
+#   include software::telegram
+class software::telegram {
+  package { 'telegram-desktop':
+    ensure => installed, 
   }
 }

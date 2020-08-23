@@ -5,9 +5,7 @@
 # @example
 #   include software::oomox
 class software::oomox {
-  exec { 'oomox':
-    command => '/usr/bin/echo 1 | /usr/bin/yay --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu -S oomox',
-    unless  => '/usr/bin/pacman -Qi oomox',
-    user    => 'kelaun',
+  package { 'oomox':
+    ensure => absent,
   }
 }

@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::spicetify
-class software::spicetify {
-  package { 'spicetify-cli':
+#   include software::glmark2
+class software::glmark2 {
+  package { 'glmark2-git':
     ensure => absent,
   }
 }

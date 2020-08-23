@@ -6,6 +6,6 @@
 #   include software::rofi
 class software::rofi {
   package { 'rofi':
-    ensure => latest,
+    ensure => absent,
   }
 }
