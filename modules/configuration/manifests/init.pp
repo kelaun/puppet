@@ -13,4 +13,5 @@ class configuration {
   include configuration::firefox
   include configuration::pacman
   include configuration::spectrwm
+  include configuration::suspend
 }
