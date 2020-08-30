@@ -22,7 +22,7 @@ alias ls='ls --color=auto'
 alias wowls='instawow list'
 alias update='yay -Syy'
 alias wowupdate='instawow update'
-alias upgrade='yay -Syu; instawow update'
+alias upgrade='yay -Syu'
 alias wowupgrade='instawow update'
 alias install='yay -S'
 alias wowinstall='instawow install'
@@ -39,9 +39,5 @@ PS1='\W > '
 export EDITOR='vim'
 export VISUAL='vim'
 
-## Random color script
-colorscript random
-
 ## Colorscheme
 (cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
