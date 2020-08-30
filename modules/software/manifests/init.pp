@@ -29,7 +29,6 @@ class software {
   include software::tuxedocontrolcenter
   include software::discord
   include software::libreoffice
-  include software::greenwithenvy
   include software::rofi
   include software::instawow
   include software::redshift

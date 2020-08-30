@@ -6,6 +6,6 @@
 #   include software::spicetify
 class software::spicetify {
   package { 'spicetify-cli':
-    ensure => absent,
+    ensure => installed,
   }
 }
