@@ -39,9 +39,6 @@ PS1='\W > '
 export EDITOR='vim'
 export VISUAL='vim'
 
-## Random color script
-colorscript random
-
 ## Colorscheme
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
