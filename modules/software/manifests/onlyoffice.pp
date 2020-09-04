@@ -6,6 +6,6 @@
 #   include software::onlyoffice
 class software::onlyoffice {
   package { 'onlyoffice-bin':
-    ensure => absent,
+    ensure => installed,
   }
 }
