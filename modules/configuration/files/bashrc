@@ -39,6 +39,7 @@ PS1='\W > '
 ## Defaults
 export EDITOR='vim'
 export VISUAL='vim'
+export MAKEFLAGS="-j$(nproc)"
 
 ## Colorscheme
 (cat ~/.cache/wal/sequences &)
