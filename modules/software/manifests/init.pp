@@ -116,4 +116,5 @@ class software {
   include software::benchmark
   include software::scripts
   include software::electron
+  include software::accessibility
 }
