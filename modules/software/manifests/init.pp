@@ -115,5 +115,4 @@ class software {
   include software::picom
   include software::benchmark
   include software::scripts
-  include software::code
 }
