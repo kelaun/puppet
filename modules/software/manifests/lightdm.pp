@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::gparted
-class software::gparted {
-  package { 'gparted':
+#   include software::lightdm
+class software::lightdm {
+  package { 'lightdm-gtk-greeter-settings':
     ensure => absent,
   }
 }

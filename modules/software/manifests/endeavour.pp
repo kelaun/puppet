@@ -8,4 +8,7 @@ class software::endeavour {
   package { 'endeavouros-theming':
     ensure => absent,
   }
+  package { 'hwinfo':
+    ensure => absent,
+  }
 }

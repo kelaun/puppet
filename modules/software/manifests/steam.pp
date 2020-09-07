@@ -6,6 +6,6 @@
 #   include software::steam
 class software::steam {
   package { 'steam':
-    ensure => latest,
+    ensure => absent,
   }
 }

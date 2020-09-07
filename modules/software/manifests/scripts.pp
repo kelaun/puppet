@@ -3,15 +3,12 @@
 # A description of what this class does
 #
 # @example
-#   include software::printer
-class software::printer {
-  package { 'system-config-printer':
+#   include software::scripts
+class software::scripts {
+  package { 'shell-color-scripts':
     ensure => absent,
   }
-  package { 'cups-pdf':
-    ensure => absent,
-  }
-  package { 'splix':
+  package { 'pfetch-git':
     ensure => absent,
   }
 }
