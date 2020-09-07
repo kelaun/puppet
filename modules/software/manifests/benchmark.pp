@@ -3,15 +3,15 @@
 # A description of what this class does
 #
 # @example
-#   include software::endeavour
-class software::endeavour {
-  package { 'endeavouros-theming':
+#   include software::benchmark
+class software::benchmark {
+  package { 's-tui':
     ensure => absent,
   }
-  package { 'hwinfo':
+  package { 'htop':
     ensure => absent,
   }
-  package { 'ripgrep':
+  package { 'stress':
     ensure => absent,
   }
 }

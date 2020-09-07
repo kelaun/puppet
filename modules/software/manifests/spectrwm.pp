@@ -32,9 +32,6 @@ class software::spectrwm {
   package { 'nitrogen':
     ensure => installed,
   }
-  package { 'picom':
-    ensure => installed,
-  }
   package { 'rxvt-unicode':
     ensure => installed,
   }

@@ -29,6 +29,7 @@ class software {
   include software::tuxedocontrolcenter
   include software::discord
   include software::libreoffice
+  include software::greenwithenvy
   include software::rofi
   include software::instawow
   include software::redshift
@@ -100,4 +101,20 @@ class software {
   include software::networkmanager
   include software::xterm
   include software::endeavour
+  include software::kernel
+  include software::bind
+  include software::onefetch
+  include software::libpdfium
+  include software::gn
+  include software::linux
+  include software::galculator
+  include software::drivers
+  include software::mail
+  include software::lightdm
+  include software::dns
+  include software::picom
+  include software::benchmark
+  include software::scripts
+  include software::electron
+  include software::accessibility
 }

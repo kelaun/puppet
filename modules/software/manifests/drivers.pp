@@ -3,21 +3,24 @@
 # A description of what this class does
 #
 # @example
-#   include software::printer
-class software::printer {
-  package { 'system-config-printer':
+#   include software::drivers
+class software::drivers {
+  package { 'jfsutils':
     ensure => absent,
   }
-  package { 'cups-pdf':
+  package { 'reiserfsprogs':
     ensure => absent,
   }
-  package { 'splix':
+  package { 'f2fs-tools':
     ensure => absent,
   }
-  package { 'cups':
+  package { 'ipw2100-fw':
     ensure => absent,
   }
-  package { 'cups-filters':
+  package { 'ipw2200-fw':
+    ensure => absent,
+  }
+  package { 'b43-fwcutter':
     ensure => absent,
   }
 }

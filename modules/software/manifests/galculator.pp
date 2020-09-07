@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::gparted
-class software::gparted {
-  package { 'gparted':
+#   include software::galculator
+class software::galculator {
+  package { 'galculator':
     ensure => absent,
   }
 }
