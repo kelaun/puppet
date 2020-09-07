@@ -13,8 +13,17 @@ VOLUME="$(pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 
 # DATE
 TODAY="$(date "+%d %B, %H:%M")"
 
+# BATTERY
+STATE="$(cat /sys/class/power_supply/BAT0/status)"
+PERCENT="$(cat /sys/class/power_supply/BAT0/capacity)"
+BAT="$(case $STATE in 
+  "Full") echo "Full";;
+  "Discharging") echo "$PERCENT%";;
+  *) echo "Charging";;
+esac)"
+
 # Final bar
-echo "${NETNAME}   ${VOLUME}   ${TODAY}"
+echo "${BAT}   ${NETNAME}   ${VOLUME}   ${TODAY}"
 sleep 1
 
 done

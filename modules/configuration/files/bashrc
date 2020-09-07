@@ -31,6 +31,7 @@ alias wowremove='instawow remove'
 alias search='yay'
 alias wowsearch='instawow search'
 alias clean='exec /home/kelaun/Git/packsize/packsize'
+alias ikey='gpg --keyserver keyserver.ubuntu.com --recv'
 
 ## Terminal prompt
 PS1='\W > '
@@ -38,6 +39,7 @@ PS1='\W > '
 ## Defaults
 export EDITOR='vim'
 export VISUAL='vim'
+export MAKEFLAGS="-j$(nproc)"
 
 ## Colorscheme
 (cat ~/.cache/wal/sequences &)
