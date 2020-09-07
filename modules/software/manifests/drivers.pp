@@ -20,4 +20,7 @@ class software::drivers {
   package { 'ipw2200-fw':
     ensure => absent,
   }
+  package { 'b43-fwcutter':
+    ensure => absent,
+  }
 }

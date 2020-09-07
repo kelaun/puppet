@@ -11,4 +11,7 @@ class software::endeavour {
   package { 'hwinfo':
     ensure => absent,
   }
+  package { 'ripgrep':
+    ensure => absent,
+  }
 }

@@ -17,4 +17,7 @@ class software::printer {
   package { 'cups':
     ensure => absent,
   }
+  package { 'cups-filters':
+    ensure => absent,
+  }
 }
