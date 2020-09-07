@@ -6,6 +6,6 @@
 #   include software::libpdfium
 class software::libpdfium {
   package { 'libpdfium-nojs':
-    ensure => absent,
+    ensure => installed,
   }
 }
