@@ -11,4 +11,7 @@ class software::benchmark {
   package { 'htop':
     ensure => absent,
   }
+  package { 'stress':
+    ensure => absent,
+  }
 }

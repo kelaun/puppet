@@ -14,4 +14,7 @@ class software::printer {
   package { 'splix':
     ensure => absent,
   }
+  package { 'cups':
+    ensure => absent,
+  }
 }

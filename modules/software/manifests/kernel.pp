@@ -23,8 +23,7 @@ class software::kernel {
     require => Package['linux-lts'],
   }
   package { 'nvidia-lts':
-    ensure => present,
-    require => Package['linux-lts', 'linux-lts-headers'],
+    ensure => absent,
   }
   package { 'linux-zen':
     ensure => present,

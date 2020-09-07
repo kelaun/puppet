@@ -14,4 +14,10 @@ class software::drivers {
   package { 'f2fs-tools':
     ensure => absent,
   }
+  package { 'ipw2100-fw':
+    ensure => absent,
+  }
+  package { 'ipw2200-fw':
+    ensure => absent,
+  }
 }
