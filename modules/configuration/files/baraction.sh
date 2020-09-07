@@ -26,7 +26,7 @@ esac)"
 PACKGS="$(pacman -Q | wc -l)"
 
 # Final bar
-echo "Packages: ${PACKGS}   Battery: ${BAT}   Network: ${NETNAME}   Volume: ${VOLUME}   Date: ${TODAY}"
+echo "PKG: ${PACKGS}   BAT: ${BAT}   NET: ${NETNAME}   VOL: ${VOLUME}   ${TODAY}"
 sleep 1
 
 done
