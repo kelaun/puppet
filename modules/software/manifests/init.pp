@@ -102,7 +102,6 @@ class software {
   include software::xterm
   include software::endeavour
   include software::kernel
-  include software::xorg
   include software::bind
   include software::onefetch
   include software::libpdfium
