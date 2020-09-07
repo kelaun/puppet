@@ -11,13 +11,19 @@ class configuration::spectrwm {
     group  => 'kelaun',
     mode   => '0755',
   }
+  file { '/home/kelaun/Pictures/Screenshots':
+    ensure => directory,
+    owner  => 'kelaun',
+    group  => 'kelaun',
+    mode   => '0644',
+  }
   file { '/home/kelaun/.local/bin/screenshot.sh':
     ensure => file,
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0755',
     source => 'puppet:///modules/configuration/screenshot.sh',
-    require => File['/home/kelaun/.local/bin'],
+    require => File['/home/kelaun/.local/bin','/home/kelaun/Pictures/Screenshots'],
   }
   file { '/home/kelaun/.local/bin/baraction.sh':
     ensure => file,

@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::gparted
-class software::gparted {
-  package { 'gparted':
+#   include software::accessibility
+class software::accessibility {
+  package { 'liblouis':
     ensure => absent,
   }
 }

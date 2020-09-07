@@ -6,6 +6,6 @@
 #   include software::vscode
 class software::vscode {
   package { 'code':
-    ensure => installed,
+    ensure => absent,
   }
 }

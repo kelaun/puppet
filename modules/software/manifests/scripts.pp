@@ -3,12 +3,12 @@
 # A description of what this class does
 #
 # @example
-#   include software::networkmanager
-class software::networkmanager {
-  package { 'networkmanager-openvpn':
+#   include software::scripts
+class software::scripts {
+  package { 'shell-color-scripts':
     ensure => absent,
   }
-  package { 'network-manager-applet':
+  package { 'pfetch-git':
     ensure => absent,
   }
 }

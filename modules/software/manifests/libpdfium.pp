@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::gparted
-class software::gparted {
-  package { 'gparted':
-    ensure => absent,
+#   include software::libpdfium
+class software::libpdfium {
+  package { 'libpdfium-nojs':
+    ensure => installed,
   }
 }
