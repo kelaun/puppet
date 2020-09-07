@@ -13,8 +13,11 @@ VOLUME="$(pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 
 # DATE
 TODAY="$(date "+%d %B, %H:%M")"
 
+# PACKAGES
+PACKGS="$(pacman -Q | wc -l)"
+
 # Final bar
-echo "${NETNAME}   ${VOLUME}   ${TODAY}"
+echo "PACKAGES: ${PACKGS}   NETWORK: ${NETNAME}   VOLUME: ${VOLUME}   DATE: ${TODAY}"
 sleep 1
 
 done
