@@ -17,7 +17,7 @@ TODAY="$(date "+%d %B, %H:%M")"
 PACKGS="$(pacman -Q | wc -l)"
 
 # Final bar
-echo "PACKAGES: ${PACKGS}   NETWORK: ${NETNAME}   VOLUME: ${VOLUME}   DATE: ${TODAY}"
+echo "Packages: ${PACKGS}   Network: ${NETNAME}   Volume: ${VOLUME}   Date: ${TODAY}"
 sleep 1
 
 done
