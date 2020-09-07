@@ -35,9 +35,6 @@ class software::scripts {
   package { 'libmaxminddb':
     ensure => absent,
   }
-  package { 'libxvmc':
-    ensure => absent,
-  }
   package { 'oniguruma':
     ensure => absent,
   }
