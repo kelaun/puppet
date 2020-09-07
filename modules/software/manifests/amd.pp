@@ -3,12 +3,12 @@
 # A description of what this class does
 #
 # @example
-#   include software::gnome
-class software::gnome {
-  package { 'gnome-themes-extra':
+#   include software::amd
+class software::amd {
+  package { 'amdvlk':
     ensure => absent,
   }
-  package { 'polkit-gnome':
+  package { 'lib32-amdvlk':
     ensure => absent,
   }
 }

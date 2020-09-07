@@ -116,4 +116,9 @@ class software {
   include software::scripts
   include software::electron
   include software::accessibility
+  include software::amd
+  include software::bluetooth
+  include software::gtk
+  include software::i3
+  include software::perl
 }
