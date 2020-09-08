@@ -8,4 +8,10 @@ class software::lightdm {
   package { 'lightdm-gtk-greeter-settings':
     ensure => absent,
   }
+  package { 'lightdm':
+    ensure => absent,
+  }
+  package { 'lightdm-gtk-greeter':
+    ensure => absent,
+  }
 }

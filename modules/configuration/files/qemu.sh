@@ -1,20 +1,20 @@
 #!/bin/bash
 create () {
-	qemu-img create -f qcow2 $2 $3
+	qemu-img create -f qcow2 $1 $2
 }
 
 bootISO () {
-	qemu-system-x86_64 -m $2 -boot d -enable-kvm -smp $3 -net nic -net user -hda $4 -cdrom $5
+	qemu-system-x86_64 -m $1 -boot d -enable-kvm -smp $2 -net nic -net user -hda $3 -cdrom $4
 }
 
 boot() {
-	qemu-system-x86_64 -m $2 -boot d -enable-kvm -smp $3 -net nic -net user -hda $4
+	qemu-system-x86_64 -m $1 -boot d -enable-kvm -smp $2 -net nic -net user -hda $3
 }
 
 case $# in
-	3) create;;
-	4) boot;;
-	5) bootISO;;
+	3) create $2 $3;;
+	4) boot $2 $3 $4;;
+	5) bootISO $2 $3 $4 $5;;
 	*) echo -e "Please choose whether to create, boot an ISO, or boot an image.\n
 		For create, use 2 extra parameters\n
 		1. Image name (e.g. image.img)\n

@@ -118,4 +118,6 @@ class software {
   include software::electron
   include software::accessibility
   include software::qemu
+  include software::alsa
+  include software::vim
 }
