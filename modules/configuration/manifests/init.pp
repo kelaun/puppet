@@ -15,4 +15,5 @@ class configuration {
   include configuration::spectrwm
   include configuration::suspend
   include configuration::xorg
+  include configuration::xinit
 }
