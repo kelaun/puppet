@@ -14,4 +14,5 @@ class configuration {
   include configuration::pacman
   include configuration::spectrwm
   include configuration::suspend
+  include configuration::kvm
 }
