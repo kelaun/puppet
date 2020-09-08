@@ -117,4 +117,5 @@ class software {
   include software::scripts
   include software::electron
   include software::accessibility
+  include software::qemu
 }
