@@ -11,49 +11,85 @@ class software::scripts {
   package { 'pfetch-git':
     ensure => absent,
   }
-  package { 'archlinux-xdg-menu':
+  package { 'accountsservice':
     ensure => absent,
   }
-  package { 'confuse':
+  package { 'bash-completion':
     ensure => absent,
   }
-  package { 'feh':
+  package { 'dhclient':
     ensure => absent,
   }
-  package { 'geoip':
+  package { 'dialog':
     ensure => absent,
   }
-  package { 'geoip-database':
+  package { 'gcr':
     ensure => absent,
   }
-  package { 'inxi':
+  package { 'gnu-netcat':
     ensure => absent,
   }
-  package { 'jq':
+  package { 'gptfdisk':
     ensure => absent,
   }
-  package { 'libmaxminddb':
+  package { 'hardinfo':
     ensure => absent,
   }
-  package { 'oniguruma':
+  package { 'iwd':
     ensure => absent,
   }
-  package { 'reflector-simple':
+  package { 'libbytesize':
     ensure => absent,
   }
-  package { 'sysstat':
+  package { 'media-player-info':
     ensure => absent,
   }
-  package { 'tumbler':
+  package { 'mtools':
     ensure => absent,
   }
-  package { 'xcb-util-cursor':
+  package { 'os-prober':
     ensure => absent,
   }
-  package { 'xcb-util-xrm':
+  package { 'parted':
     ensure => absent,
   }
-  package { 'xcompmgr':
+  package { 'pcurses':
+    ensure => absent,
+  }
+  package { 'python-pywal':
+    ensure => absent,
+  }
+  package { 'solid':
+    ensure => absent,
+  }
+  package { 'time': 
+    ensure => absent,
+  }
+  package { 'tree':
+    ensure => absent,
+  }
+  package { 'udisks2':
+    ensure => absent,
+  }
+  package { 'volume_key':
+    ensure => absent,
+  }
+  package { 'whois':
+    ensure => absent,
+  }
+  package { 'wvdial':
+    ensure => absent,
+  }
+  package { 'wvstreams':
+    ensure => absent,
+  }
+  package { 'xplc':
+    ensure => absent,
+  }
+  package { 'keyserver-rank':
+    ensure => absent,
+  }
+  package { 'grub-tools':
     ensure => absent,
   }
 }

@@ -8,7 +8,28 @@ class software::gnome {
   package { 'gnome-themes-extra':
     ensure => absent,
   }
-  package { 'polkit-gnome':
+  package { 'gvfs':
+    ensure => absent,
+  }
+  package { 'gvfs-afc':
+    ensure => absent,
+  }
+  package { 'gvfs-goa':
+    ensure => absent,
+  }
+  package { 'gvfs-google':
+    ensure => absent,
+  }
+  package { 'gvfs-gphoto2':
+    ensure => absent,
+  }
+  package { 'gvfs-mtp':
+    ensure => absent,
+  }
+  package { 'gvfs-nfs':
+    ensure => absent,
+  } 
+  package { 'gvfs-smb':
     ensure => absent,
   }
 }

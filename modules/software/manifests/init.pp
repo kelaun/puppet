@@ -121,4 +121,6 @@ class software {
   include software::gtk
   include software::i3
   include software::perl
+  include software::alsa
+  include software::vim
 }

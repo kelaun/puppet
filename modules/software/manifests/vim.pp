@@ -3,12 +3,12 @@
 # A description of what this class does
 #
 # @example
-#   include software::firefox
-class software::firefox {
-  package { 'firefox':
+#   include software::vim
+class software::vim {
+  package { 'vim':
     ensure => latest,
   }
-  package { 'ttf-bitstream-vera':
-    ensure => installed,
+  package { 'vi':
+    ensure => absent,
   }
 }

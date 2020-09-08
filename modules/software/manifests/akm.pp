@@ -6,6 +6,6 @@
 #   include software::akm
 class software::akm {
   package { 'akm':
-    ensure => installed,
+    ensure => absent,
   }
 }

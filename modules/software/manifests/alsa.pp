@@ -3,9 +3,9 @@
 # A description of what this class does
 #
 # @example
-#   include software::accessibility
-class software::accessibility {
-  package { 'liblouis':
-    ensure => installed,
+#   include software::alsa
+class software::alsa {
+  package { 'alsa-firmware':
+    ensure => absent,
   }
 }
