@@ -16,4 +16,5 @@ class configuration {
   include configuration::suspend
   include configuration::kvm
   include configuration::xinit
+  include configuration::twitch
 }
