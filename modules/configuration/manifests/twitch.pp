@@ -12,4 +12,7 @@ class configuration::twitch {
     mode   => '0777',
     source => 'puppet:///modules/configuration/twitch',
   }
+  package { 'youtube-dl':
+    ensure => installed,
+  }
 }
