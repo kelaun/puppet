@@ -57,7 +57,7 @@ class software::scripts {
     ensure => absent,
   }
   package { 'python-pywal':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'solid':
     ensure => absent,
