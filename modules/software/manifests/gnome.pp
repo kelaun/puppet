@@ -9,7 +9,7 @@ class software::gnome {
     ensure => absent,
   }
   package { 'gvfs':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'gvfs-afc':
     ensure => absent,
@@ -30,6 +30,6 @@ class software::gnome {
     ensure => absent,
   } 
   package { 'gvfs-smb':
-    ensure => absent,
+    ensure => installed,
   }
 }
