@@ -11,7 +11,7 @@ class software::dmenu {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0777',
-    source => 'puppet:///modules/software/dmenu.sh',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/laptop/dmenu/dmenu.sh',
   }
 
   file { 'dmenu_recency':
@@ -20,6 +20,6 @@ class software::dmenu {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0777',
-    source => 'puppet:///modules/software/dmenu-recency.sh',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/laptop/dmenu/dmenu-recency.sh',
   }
 }

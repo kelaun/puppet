@@ -11,7 +11,7 @@ class configuration::xorg {
     group  => 'root',
     mode   => '0644',
     owner  => 'root',
-    source => 'puppet:///modules/configuration/10-display.conf',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/laptop/xorg/10-display.conf',
   }
   file { 'touchscreen':
     path   => '/etc/X11/xorg.conf.d/99-touchscreen.conf',
@@ -19,6 +19,6 @@ class configuration::xorg {
     group  => 'root',
     mode   => '0644',
     owner  => 'root',
-    source => 'puppet:///modules/configuration/99-touchscreen.conf',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/laptop/xorg/99-touchscreen.conf',
   }
 }

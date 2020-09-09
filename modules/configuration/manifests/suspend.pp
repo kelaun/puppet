@@ -10,7 +10,7 @@ class configuration::suspend {
     owner  => 'root',
     group  => 'root',
     mode   => '0777',
-    source => 'puppet:///modules/configuration/lock.service',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/laptop/xorg/lock.service',
   }
   service { 'lock.service':
     enable => true,

@@ -11,6 +11,6 @@ class configuration::dmenu {
     group  => 'kelaun',
     mode   => '0644',
     owner  => 'kelaun',
-    source => 'puppet:///modules/configuration/dmenurc',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/laptop/dmenu/dmenurc',
   }
 }

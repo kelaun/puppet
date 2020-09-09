@@ -22,7 +22,7 @@ class configuration::spectrwm {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0755',
-    source => 'puppet:///modules/configuration/screenshot.sh',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/laptop/utils/screenshot.sh',
     require => File['/home/kelaun/.local/bin','/home/kelaun/Pictures/Screenshots'],
   }
   file { '/home/kelaun/.local/bin/baraction.sh':
@@ -30,7 +30,7 @@ class configuration::spectrwm {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0755', 
-    source => 'puppet:///modules/configuration/baraction.sh',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/laptop/spectrwm/baraction.sh',
     require => File['/home/kelaun/.local/bin'],
   }
   file { '/home/kelaun/.spectrwm.conf':
@@ -38,14 +38,14 @@ class configuration::spectrwm {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0644',
-    source => 'puppet:///modules/configuration/spectrwm.conf',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/laptop/spectrwm/spectrwm.conf',
   }
   file { '/home/kelaun/.local/bin/exitmenu.sh':
     ensure => file,
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0755',
-    source => 'puppet:///modules/configuration/exitmenu.sh',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/laptop/spectrwm/exitmenu.sh',
     require => File['/home/kelaun/.local/bin'],
   }
   file { '/home/kelaun/.local/bin/autostart.sh':
@@ -53,7 +53,7 @@ class configuration::spectrwm {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0755',
-    source => 'puppet:///modules/configuration/autostart.sh',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/laptop/spectrwm/autostart.sh',
     require => File['/home/kelaun/.local/bin'],
   }
 }

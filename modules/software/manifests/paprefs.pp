@@ -13,6 +13,6 @@ class software::paprefs {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0777',
-    source => 'puppet:///modules/software/volume.sh',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/laptop/utils/volume.sh',
   }
 }
