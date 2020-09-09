@@ -23,7 +23,7 @@ class configuration::firefox {
     owner   => 'kelaun',
     group   => 'kelaun',
     mode    => '0644',
-    source  => 'puppet:///modules/configuration/userChrome.css',
+    source  => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/firefox/userChrome.css',
     require => File[$firefox_dirs],
   }
 }

@@ -11,6 +11,6 @@ class configuration::pacman {
     group  => 'root',
     mode   => '0644',
     owner  => 'root',
-    source => 'puppet:///modules/configuration/pacman.conf',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/pacman/pacman.conf',
   }
 }

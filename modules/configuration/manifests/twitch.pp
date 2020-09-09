@@ -10,7 +10,7 @@ class configuration::twitch {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0777',
-    source => 'puppet:///modules/configuration/twitch',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/desktop/utils/twitch',
   }
   package { 'youtube-dl':
     ensure => installed,

@@ -10,6 +10,6 @@ class configuration::xinit {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0777',
-    source => 'puppet:///modules/configuration/xinitrc',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/xorg/xinitrc',
   }
 }

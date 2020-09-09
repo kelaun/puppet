@@ -11,6 +11,6 @@ class configuration::dunst {
     group  => 'kelaun',
     mode   => '0644',
     owner  => 'kelaun',
-    source => 'puppet:///modules/configuration/dunstrc',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/dunst/dunstrc',
   }
 }

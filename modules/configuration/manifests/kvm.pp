@@ -10,6 +10,6 @@ class configuration::kvm {
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0777',
-    source => 'puppet:///modules/configuration/qemu.sh',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/desktop/utils/qemu.sh',
   }
 }

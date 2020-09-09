@@ -11,6 +11,6 @@ class configuration::xresources {
     group  => 'kelaun',
     mode   => '0644',
     owner  => 'kelaun',
-    source => 'puppet:///modules/configuration/xresources',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/xorg/xresources',
   }
 }

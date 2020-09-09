@@ -11,6 +11,6 @@ class configuration::bash {
     group  => 'kelaun',
     mode   => '0644',
     owner  => 'kelaun',
-    source => 'puppet:///modules/configuration/bashrc',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/bash/bashrc',
   }
 }
