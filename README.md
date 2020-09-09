@@ -1,11 +1,15 @@
 <div align="center">
-    <h3 align="center">
-    	Puppet repository for my laptop (GPD Pocket 2) setup
-    </h3>
+  <h1>Puppet repository for my setup</h1>
 </div>
 
 <div align="center">
-	
-[![maintained](https://img.shields.io/maintenance/yes/2020?label=maintained&style=flat-square)](https://github.com/kelaun/puppet/commits/gpd2) [![contributions](https://img.shields.io/badge/contribution-welcome-brightgreen&?style=flat-square)](https://github.com/kelaun/puppet/pulls) [![HitCount](http://hits.dwyl.com/kelaun/puppet.svg)](http://hits.dwyl.com/kelaun/puppet)
+  <img src="https://img.shields.io/maintenance/yes/2020?label=maintained&style=flat-square"> <img src="https://img.shields.io/badge/contribution-welcome-brightgreen&?style=flat-square">
 
+  <h2>Welcome to the puppet repository of Kelaun</h2>
+</div>
+
+<div align="left">
+  <p>
+    This repository contains the code for that is used for each new Arch Linux installation by puppet.<br>
+  </p>
 </div>
