@@ -24,13 +24,13 @@ class software::scripts {
     ensure => absent,
   }
   package { 'gcr':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'gnu-netcat':
     ensure => absent,
   }
   package { 'gptfdisk':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'hardinfo':
     ensure => absent,
@@ -39,7 +39,7 @@ class software::scripts {
     ensure => absent,
   }
   package { 'libbytesize':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'media-player-info':
     ensure => absent,
@@ -51,7 +51,7 @@ class software::scripts {
     ensure => absent,
   }
   package { 'parted':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'pcurses':
     ensure => absent,
@@ -69,10 +69,10 @@ class software::scripts {
     ensure => absent,
   }
   package { 'udisks2':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'volume_key':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'whois':
     ensure => absent,

@@ -24,10 +24,10 @@ class software::drivers {
     ensure => absent,
   }
   package { 'btrfs-progs':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'dmraid':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'efibootmgr':
     ensure => absent,
@@ -36,7 +36,7 @@ class software::drivers {
     ensure => absent,
   }
   package { 'libblockdev':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'libdvdcss':
     ensure => absent,
@@ -45,10 +45,10 @@ class software::drivers {
     ensure => absent,
   }
   package { 'lvm2':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'mdadm':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'ppp':
     ensure => absent,
@@ -60,7 +60,7 @@ class software::drivers {
     ensure => absent,
   }
   package { 'xfsprogs':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'xl2tpd':
     ensure => absent,
