@@ -23,4 +23,10 @@ class software::endeavour {
   package { 'eos-update-notifier':
     ensure => absent,
   }
+  package { 'endeavouros-keyring':
+    ensure => absent,
+  }
+  package { 'endeavouros-mirrorlist':
+    ensure => absent,
+  }
 }
