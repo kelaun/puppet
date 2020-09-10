@@ -17,4 +17,7 @@ class software::endeavour {
   package { 'grub2-theme-endeavouros':
     ensure => absent,
   }
+  package { 'eos-log-tool':
+    ensure => absent,
+  }
 }
