@@ -33,7 +33,7 @@ class software::kernel {
     require => Package['linux-zen'],
   }
   package { 'nvidia-dkms':
-    ensure => present,
+    ensure => absent,
     require => Package['linux-zen', 'linux-zen-headers'],
   }
 }
