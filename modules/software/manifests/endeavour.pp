@@ -20,4 +20,7 @@ class software::endeavour {
   package { 'eos-log-tool':
     ensure => absent,
   }
+  package { 'eos-update-notifier':
+    ensure => absent,
+  }
 }
