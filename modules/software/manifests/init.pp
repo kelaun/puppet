@@ -120,4 +120,5 @@ class software {
   include software::qemu
   include software::alsa
   include software::vim
+  include software::pdk
 }
