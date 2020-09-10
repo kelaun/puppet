@@ -123,4 +123,5 @@ class software {
   include software::perl
   include software::alsa
   include software::vim
+  include software::pdk
 }
