@@ -9,4 +9,7 @@ class software::greenwithenvy {
     command => '/usr/bin/nvidia-xconfig --cool-bits=48',
     user    => 'root',
   }
+  package { 'nvidia-settings':
+    ensure => absent,
+  }
 }
