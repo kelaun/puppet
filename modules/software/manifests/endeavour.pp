@@ -14,4 +14,7 @@ class software::endeavour {
   package { 'ripgrep':
     ensure => absent,
   }
+  package { 'grub2-theme-endeavouros':
+    ensure => absent,
+  }
 }
