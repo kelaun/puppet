@@ -6,6 +6,6 @@
 #   include software::cmake
 class software::cmake {
   package { 'cmake':
-    ensure => latest,
+    ensure => absent,
   }
 }
