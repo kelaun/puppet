@@ -121,4 +121,5 @@ class software {
   include software::alsa
   include software::vim
   include software::pdk
+  include software::aur
 }
