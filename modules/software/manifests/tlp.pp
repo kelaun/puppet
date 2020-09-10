@@ -14,7 +14,7 @@ class software::tlp {
     require => Package['tlp'],
   }
   package { 'tlpui-git':
-    ensure  => installed,
+    ensure  => absent,
     require => Service['tlp.service'],
   }
 }
