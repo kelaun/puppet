@@ -6,13 +6,13 @@
 #   include configuration::twitch
 class configuration::twitch {
   file { '/home/kelaun/.local/bin/twitch':
-    ensure => present,
+    ensure => absent,
     owner  => 'kelaun',
     group  => 'kelaun',
     mode   => '0777',
     source => 'https://raw.githubusercontent.com/kelaun/scripts/desktop/utils/twitch',
   }
   package { 'youtube-dl':
-    ensure => installed,
+    ensure => absent,
   }
 }
