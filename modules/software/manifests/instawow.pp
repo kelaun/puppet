@@ -6,6 +6,6 @@
 #   include software::instawow
 class software::instawow {
   package { 'instawow':
-    ensure   => latest,
+    ensure   => installed,
   }
 }
