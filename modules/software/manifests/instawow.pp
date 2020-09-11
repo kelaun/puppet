@@ -7,6 +7,5 @@
 class software::instawow {
   package { 'instawow':
     ensure   => latest,
-    provider => pip3,
   }
 }
