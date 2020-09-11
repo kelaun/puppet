@@ -135,13 +135,13 @@ class software::lutris {
     ensure  => absent,
   }
   package { 'gst-plugins-base-libs':
-    ensure  => absent,
+    ensure  => installed,
   }
   package { 'lib32-gst-plugins-base-libs':
     ensure  => absent,
   }
   package { 'vulkan-icd-loader':
-    ensure  => absent,
+    ensure  => installed,
   }
   package { 'lib32-vulkan-icd-loader':
     ensure  => absent,
