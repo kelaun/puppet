@@ -6,6 +6,6 @@
 #   include software::discord
 class software::discord {
   package { 'discord': 
-    ensure => latest,
+    ensure => absent,
   }
 }

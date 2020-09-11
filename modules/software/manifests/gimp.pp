@@ -6,7 +6,7 @@
 #   include software::gimp
 class software::gimp {
   package { 'gimp':
-    ensure => latest,
+    ensure => absent,
   }
   package { 'gimp-help-fr':
     ensure  => absent,

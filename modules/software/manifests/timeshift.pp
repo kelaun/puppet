@@ -6,6 +6,6 @@
 #   include software::timeshift
 class software::timeshift {
   package { 'timeshift':
-    ensure => installed,
+    ensure => absent,
   }
 }

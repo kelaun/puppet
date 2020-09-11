@@ -6,6 +6,6 @@
 #   include software::packsize
 class software::packsize {
   package { 'package-query':
-    ensure => installed,
+    ensure => absent,
   }
 }

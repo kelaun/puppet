@@ -6,7 +6,6 @@
 #   include software::instawow
 class software::instawow {
   package { 'instawow':
-    ensure   => latest,
-    provider => pip3,
+    ensure   => absent,
   }
 }
