@@ -21,4 +21,11 @@ class configuration::bash {
     owner  => 'kelaun',
     source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/git/.gitconfig',
   }
+  package { 'bash-completion':
+    ensure => installed,
+  }
+  package { 'bash-git-prompt':
+    ensure => installed,
+    require => File['bashrc', 'gitconfig'],
+  }
 }
