@@ -13,4 +13,12 @@ class configuration::bash {
     owner  => 'kelaun',
     source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/bash/bashrc',
   }
+  file { 'gitconfig':
+    ensure => present,
+    path   => '/home/kelaun/.gitconfig',
+    group  => 'kelaun',
+    mode   => '0644',
+    owner  => 'kelaun',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/git/.gitconfig',
+  }
 }
