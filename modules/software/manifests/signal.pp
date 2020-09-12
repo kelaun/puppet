@@ -6,6 +6,6 @@
 #   include software::signal
 class software::signal {
   package { 'signal-desktop':
-    ensure => absent,
+    ensure => installed,
   }
 }
