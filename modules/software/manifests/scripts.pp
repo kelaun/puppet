@@ -14,9 +14,6 @@ class software::scripts {
   package { 'accountsservice':
     ensure => absent,
   }
-  package { 'bash-completion':
-    ensure => absent,
-  }
   package { 'dhclient':
     ensure => absent,
   }
