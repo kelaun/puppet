@@ -11,4 +11,7 @@ class software::vim {
   package { 'vi':
     ensure => absent,
   }
+  package {'vundle':
+    ensure => present,
+  }
 }
