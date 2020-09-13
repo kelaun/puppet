@@ -28,4 +28,12 @@ class configuration::bash {
     ensure => installed,
     require => File['bashrc', 'gitconfig'],
   }
+  file { 'inputrc':
+    ensure => present,
+    path   => '/home/kelaun/.inputrc',
+    group  => 'kelaun',
+    mode   => '0644',
+    owner  => 'kelaun',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/bash/inputrc',
+  }
 }
