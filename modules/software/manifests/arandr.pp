@@ -6,6 +6,6 @@
 #   include software::arandr
 class software::arandr {
   package { 'arandr':
-    ensure => installed,
+    ensure => absent,
   }
 }
