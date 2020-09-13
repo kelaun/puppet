@@ -11,9 +11,6 @@ class software::vim {
   package { 'vi':
     ensure => absent,
   }
-  package { 'vundle':
-    ensure => present,
-  }
   file { 'vimrc':
     ensure => present,
     path   => '/home/kelaun/.vimrc',
@@ -21,6 +18,6 @@ class software::vim {
     group  => 'kelaun',
     mode   => '0644',
     source => 'https://raw.githubusercontent.com/kelaun/dotfiles/laptop/vim/.vimrc',
-    require => Package['vim', 'vundle'],
+    require => Package['vim'],
   }
 }
