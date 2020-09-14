@@ -36,4 +36,12 @@ class configuration::bash {
     owner  => 'kelaun',
     source => 'https://raw.githubusercontent.com/kelaun/dotfiles/laptop/bash/inputrc',
   }
+  file { 'kfetch':
+    ensure => present,
+    path   => '/home/kelaun/.local/bin/kfetch',
+    group  => 'kelaun',
+    mode   => '0777', 
+		owner  => 'kelaun',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/laptop/utils/kfetch',
+  }
 }
