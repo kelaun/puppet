@@ -22,4 +22,18 @@ class software::dmenu {
     mode   => '0777',
     source => 'https://raw.githubusercontent.com/kelaun/scripts/desktop/dmenu/dmenu-recency.sh',
   }
+
+	file { 'dmenu-lpass':
+		ensure => present,
+		path   => '/home/kelaun/.local/bin/dmenu-lpass.sh',
+		owner  => 'kelaun',
+		group  => 'kelaun',
+		mode   => '0777',
+		source => 'https://raw.githubusercontent.com/kelaun/scripts/desktop/dmenu/dmenu-lpass',
+	}
+
+	package { 'lastpass-cli':
+		ensure => installed,
+		require => File['dmenu-lpass'],
+	}
 }
