@@ -26,4 +26,24 @@ class configuration::firefox {
     source  => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/firefox/userChrome.css',
     require => File[$firefox_dirs],
   }
+  
+	file { 'left-arrow.svg':
+		path    => '/home/kelaun/.mozilla/firefox/jf1r0b1x.default-release/chrome/left-arrow.svg',
+		ensure  => present,
+		owner   => 'kelaun',
+		group   => 'kelaun',
+		mode    => '0644',
+		source  => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/firefox/left-arrow.svg',
+		require => File[$firefox_dirs],
+  }
+
+  file { 'right-arrow.svg':
+		path    => '/home/kelaun/.mozilla/firefox/jf1r0b1x.default-release/chrome/right-arrow.svg',
+		ensure  => present,
+		owner   => 'kelaun',
+		group   => 'kelaun',
+		mode    => '0644',
+		source  => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/firefox/right-arrow.svg',
+		require => File[$firefox_dirs],
+	}
 }
