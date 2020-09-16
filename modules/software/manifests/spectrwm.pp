@@ -59,4 +59,7 @@ class software::spectrwm {
   package { 'xsel':
     ensure => installed,
   }
+  package { 'viewnior':
+		ensure => installed,
+	}
 }
