@@ -7,5 +7,15 @@
 class software::nodejs {
   package { 'nodejs':
     ensure => absent,
+		require => Package['node-gyp', 'npm', 'semver'],
   }
+	package { 'node-gyp':
+		ensure => absent,
+	}
+	package { 'npm':
+		ensure => absent,
+	}
+	package { 'semver':
+		ensure => absent,
+	}
 }
