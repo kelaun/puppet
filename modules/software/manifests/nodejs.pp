@@ -11,11 +11,13 @@ class software::nodejs {
   }
 	package { 'node-gyp':
 		ensure => absent,
+		require => Package['npm'],
 	}
 	package { 'npm':
 		ensure => absent,
 	}
 	package { 'semver':
 		ensure => absent,
+		require => Package['node-gyp'],
 	}
 }
