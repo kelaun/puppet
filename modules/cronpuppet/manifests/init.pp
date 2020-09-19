@@ -8,7 +8,7 @@ class cronpuppet {
   file { 'post-hook':
     ensure => 'file',
     path   => '/etc/puppet/.git/hooks/post-merge',
-    source => 'https://raw.githubusercontent.com/kelaun/scripts/desktop/puppet/post-merge',
+    source => 'https://raw.githubusercontent.com/kelaun/scripts/server/puppet/post-merge',
     mode   => '0755',
     owner  => 'root',
     group  => 'root',
