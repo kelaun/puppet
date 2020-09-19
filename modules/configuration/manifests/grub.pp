@@ -11,7 +11,7 @@ class configuration::grub {
     group  => 'root',
     mode   => '0644',
     owner  => 'root',
-    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/grub/grub',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/server/grub/grub',
   }
   exec { 'refresh_grub':
     command     => '/usr/bin/grub-mkconfig -o /boot/grub/grub.cfg',

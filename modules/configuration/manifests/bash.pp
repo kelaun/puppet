@@ -7,19 +7,19 @@
 class configuration::bash {
   file { 'bashrc':
     ensure => 'present',
-    path   => '/home/kelaun/.bashrc',
-    group  => 'kelaun',
+    path   => '/home/mediaserv/.bashrc',
+    group  => 'mediaserv',
     mode   => '0644',
-    owner  => 'kelaun',
-    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/bash/bashrc',
+    owner  => 'mediaserv',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/server/bash/bashrc',
   }
   file { 'gitconfig':
     ensure => present,
-    path   => '/home/kelaun/.gitconfig',
-    group  => 'kelaun',
+    path   => '/home/mediaserv/.gitconfig',
+    group  => 'mediaserv',
     mode   => '0644',
-    owner  => 'kelaun',
-    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/git/.gitconfig',
+    owner  => 'mediaserv',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/server/git/.gitconfig',
   }
   package { 'bash-completion':
     ensure => installed,
@@ -30,18 +30,10 @@ class configuration::bash {
   }
   file { 'inputrc':
     ensure => present,
-    path   => '/home/kelaun/.inputrc',
-    group  => 'kelaun',
+    path   => '/home/mediaserv/.inputrc',
+    group  => 'mediaserv',
     mode   => '0644',
-    owner  => 'kelaun',
-    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/bash/inputrc',
-  }
-  file { 'kfetch':
-    ensure => present,
-    path   => '/home/kelaun/.local/bin/kfetch',
-    group  => 'kelaun',
-    mode   => '0777', 
-		owner  => 'kelaun',
-    source => 'https://raw.githubusercontent.com/kelaun/scripts/desktop/utils/kfetch',
+    owner  => 'mediaserv',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/server/bash/inputrc',
   }
 }

@@ -7,14 +7,6 @@
 class configuration {
   include configuration::bash
   include configuration::grub
-  include configuration::xresources
-  include configuration::dunst
-  include configuration::dmenu
-  include configuration::firefox
   include configuration::pacman
-  include configuration::spectrwm
-  include configuration::suspend
-  include configuration::kvm
-  include configuration::xinit
-  include configuration::twitch
+  include configuration::autostart
 }
