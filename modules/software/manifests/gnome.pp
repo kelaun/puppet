@@ -5,12 +5,6 @@
 # @example
 #   include software::gnome
 class software::gnome {
-  package { 'gnome-themes-extra':
-    ensure => absent,
-  }
-  package { 'gvfs':
-    ensure => installed,
-  }
   package { 'gvfs-afc':
     ensure => absent,
   }
@@ -29,7 +23,4 @@ class software::gnome {
   package { 'gvfs-nfs':
     ensure => absent,
   } 
-  package { 'gvfs-smb':
-    ensure => installed,
-  }
 }

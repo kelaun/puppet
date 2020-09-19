@@ -5,12 +5,6 @@
 # @example
 #   include software::scripts
 class software::scripts {
-  package { 'shell-color-scripts':
-    ensure => absent,
-  }
-  package { 'pfetch-git':
-    ensure => absent,
-  }
   package { 'accountsservice':
     ensure => absent,
   }
@@ -20,23 +14,14 @@ class software::scripts {
   package { 'dialog':
     ensure => absent,
   }
-  package { 'gcr':
-    ensure => installed,
-  }
   package { 'gnu-netcat':
     ensure => absent,
-  }
-  package { 'gptfdisk':
-    ensure => installed,
   }
   package { 'hardinfo':
     ensure => absent,
   }
   package { 'iwd':
     ensure => absent,
-  }
-  package { 'libbytesize':
-    ensure => installed,
   }
   package { 'media-player-info':
     ensure => absent,
@@ -47,29 +32,14 @@ class software::scripts {
   package { 'os-prober':
     ensure => absent,
   }
-  package { 'parted':
-    ensure => installed,
-  }
   package { 'pcurses':
     ensure => absent,
-  }
-  package { 'python-pywal':
-    ensure => installed,
   }
   package { 'solid':
     ensure => absent,
   }
   package { 'time': 
     ensure => absent,
-  }
-  package { 'tree':
-    ensure => absent,
-  }
-  package { 'udisks2':
-    ensure => installed,
-  }
-  package { 'volume_key':
-    ensure => installed,
   }
   package { 'whois':
     ensure => absent,

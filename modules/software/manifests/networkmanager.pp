@@ -8,7 +8,4 @@ class software::networkmanager {
   package { 'networkmanager-openvpn':
     ensure => absent,
   }
-  package { 'network-manager-applet':
-    ensure => absent,
-  }
 }

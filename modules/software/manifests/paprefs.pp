@@ -8,11 +8,4 @@ class software::paprefs {
   package { 'paprefs':
     ensure => absent,
   }
-  file { '/home/kelaun/.local/bin/volume.sh':
-    ensure => present,
-    owner  => 'kelaun',
-    group  => 'kelaun',
-    mode   => '0777',
-    source => 'https://raw.githubusercontent.com/kelaun/scripts/desktop/utils/volume.sh',
-  }
 }

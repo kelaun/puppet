@@ -11,9 +11,6 @@ class software::endeavour {
   package { 'hwinfo':
     ensure => absent,
   }
-  package { 'ripgrep':
-    ensure => absent,
-  }
   package { 'grub2-theme-endeavouros':
     ensure => absent,
   }
@@ -29,4 +26,10 @@ class software::endeavour {
   package { 'endeavouros-mirrorlist':
     ensure => absent,
   }
+	package { 'eos-bash-shared':
+		ensure => absent,
+	}
+	package { 'eos-hooks':
+		ensure => absent,
+	}
 }

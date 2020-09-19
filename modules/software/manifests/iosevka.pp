@@ -5,9 +5,7 @@
 # @example
 #   include software::iosevka
 class software::iosevka {
-  exec { 'ttf-iosevka-term':
-    command => '/usr/bin/yay --noconfirm -S ttf-iosevka-term',
-    unless  => '/usr/bin/pacman -Qi | /usr/bin/grep ttf-iosevka-term',
-    user    => 'kelaun',
+  package { 'ttf-iosevka-term':
+		ensure => installed,
   }
 }

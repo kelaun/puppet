@@ -5,15 +5,12 @@
 # @example
 #   include software::kernel
 class software::kernel {
-  package { 'nvidia':
-    ensure => absent,
-  }
   package { 'r8168':
     ensure => absent,
   }
   package { 'linux':
     ensure => absent,
-    require => Package['nvidia', 'r8168'],
+    require => Package['r8168'],
   }
   package { 'linux-lts':
     ensure => absent,

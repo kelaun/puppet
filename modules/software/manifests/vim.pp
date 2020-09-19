@@ -13,11 +13,11 @@ class software::vim {
   }
   file { 'vimrc':
     ensure => present,
-    path   => '/home/kelaun/.vimrc',
-    owner  => 'kelaun',
-    group  => 'kelaun',
+    path   => '/home/mediaserv/.vimrc',
+    owner  => 'mediaserv',
+    group  => 'mediaserv',
     mode   => '0644',
-    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/desktop/vim/.vimrc',
+    source => 'https://raw.githubusercontent.com/kelaun/dotfiles/server/vim/.vimrc',
     require => Package['vim'],
   }
 }

@@ -23,32 +23,17 @@ class software::drivers {
   package { 'b43-fwcutter':
     ensure => absent,
   }
-  package { 'btrfs-progs':
-    ensure => installed,
-  }
-  package { 'dmraid':
-    ensure => installed,
-  }
   package { 'efibootmgr':
     ensure => absent,
   }
   package { 'efivar':
     ensure => absent,
   }
-  package { 'libblockdev':
-    ensure => installed,
-  }
   package { 'libdvdcss':
     ensure => absent,
   }
   package { 'libgdata':
     ensure => absent,
-  }
-  package { 'lvm2':
-    ensure => installed,
-  }
-  package { 'mdadm':
-    ensure => installed,
   }
   package { 'ppp':
     ensure => absent,
@@ -58,9 +43,6 @@ class software::drivers {
   }
   package { 'rp-pppoe':
     ensure => absent,
-  }
-  package { 'xfsprogs':
-    ensure => installed,
   }
   package { 'xl2tpd':
     ensure => absent,
