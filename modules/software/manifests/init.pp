@@ -43,4 +43,5 @@ class software {
   include software::scripts
   include software::alsa
   include software::vim
+	include software::plex
 }
