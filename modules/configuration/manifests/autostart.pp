@@ -3,8 +3,8 @@
 # A description of what this class does
 #
 # @example
-#   include configuration::<name>
-class configuration::<name> {
+#   include configuration::autostart
+class configuration::autostart {
 	file { '/home/mediaserv/.local/bin/autostart.sh':
 		ensure => file,
 		owner  => 'mediaserv',
