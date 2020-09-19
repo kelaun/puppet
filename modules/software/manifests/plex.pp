@@ -8,4 +8,9 @@ class software::plex {
   package { 'plex-media-server': 
     ensure => installed,
   }
+	service { 'plexmediaserver.service':
+		ensure => running,
+		enable => true,
+		require => Package['plex-media-server'],
+	}
 }
