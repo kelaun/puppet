@@ -43,7 +43,11 @@ class software::scripts {
   }
   package { 'whois':
     ensure => absent,
+		require => Package['reflector-simple'],
   }
+	package { 'reflector-simple':
+		ensure => absent,
+	}
   package { 'wvdial':
     ensure => absent,
   }
