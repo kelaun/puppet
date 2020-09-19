@@ -9,4 +9,5 @@ class configuration {
   include configuration::grub
   include configuration::pacman
   include configuration::autostart
+	include configuration::ssh
 }
