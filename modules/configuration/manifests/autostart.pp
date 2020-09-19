@@ -18,5 +18,12 @@ class configuration::autostart {
 		owner  => 'mediaserv',
 		group	 => 'mediaserv',
 		mode   => '0755',
+		require => File['/home/mediaserv/.local'],
+	}
+	file { '/home/mediaserv/.local':
+		ensure => directory,
+		owner  => 'mediaserv',
+		group  => 'mediaserv',
+		mode   => '0755',
 	}
 }
