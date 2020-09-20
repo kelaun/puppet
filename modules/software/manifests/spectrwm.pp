@@ -35,15 +35,9 @@ class software::spectrwm {
   package { 'terminator':
     ensure => installed,
   }
-  package { 'rxvt-unicode-terminfo':
-    ensure => installed,
-  }
   package { 'scrot':
     ensure => installed,
   }
-  package { 'urxvt-perls':
-    ensure => installed,
-  } 
   package { 'wireless_tools':
     ensure => installed,
   } 
