@@ -50,9 +50,6 @@ class software::spectrwm {
   package { 'xorg-fonts-misc':
     ensure => installed,
   }
-  package { 'xsel':
-    ensure => installed,
-  }
   package { 'viewnior':
 		ensure => installed,
 	}
