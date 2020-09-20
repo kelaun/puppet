@@ -32,7 +32,7 @@ class software::spectrwm {
   package { 'nitrogen':
     ensure => installed,
   }
-  package { 'rxvt-unicode':
+  package { 'terminator':
     ensure => installed,
   }
   package { 'rxvt-unicode-terminfo':
