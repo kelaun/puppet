@@ -30,10 +30,15 @@ class software::dmenu {
 		group  => 'kelaun',
 		mode   => '0777',
 		source => 'https://raw.githubusercontent.com/kelaun/scripts/laptop/dmenu/dmenu-lpass',
+		require => Package['xsel'],
 	}
 
 	package { 'lastpass-cli':
 		ensure => installed,
 		require => File['dmenu-lpass'],
+	}
+
+	package { 'xsel':
+		ensure => installed,
 	}
 }
