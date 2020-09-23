@@ -5,7 +5,6 @@
 # @example
 #   include software
 class software {
-  include software::teamviewer
   include software::spotify
   include software::darktable
   include software::gimp
