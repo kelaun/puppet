@@ -38,7 +38,7 @@ class software::dmenu {
 		require => File['dmenu-lpass'],
 	}
 
-	packagee {'xsel':
+	package {'xsel':
 		ensure => installed,
 	}
 }
