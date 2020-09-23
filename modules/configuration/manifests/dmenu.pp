@@ -19,4 +19,5 @@ class configuration::dmenu {
 		group  => 'kelaun',
 		mode   => '0755',
 		owner  => 'kelaun',
+	}
 }
