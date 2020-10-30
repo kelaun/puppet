@@ -16,10 +16,10 @@ class software::kernel {
     require => Package['nvidia', 'r8168'],
   }
   package { 'linux-lts':
-    ensure => absent,
+    ensure => installed,
   }
   package { 'linux-lts-headers':
-    ensure => absent,
+    ensure => installed,
     require => Package['linux-lts'],
   }
   package { 'nvidia-lts':
