@@ -8,4 +8,7 @@ class software::steam {
   package { 'steam':
     ensure => installed,
   }
+  package { 'ttf-ms-fonts':
+		ensure => installed,
+	}
 }
