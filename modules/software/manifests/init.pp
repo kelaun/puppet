@@ -45,4 +45,5 @@ class software {
   include software::vim
 	include software::plex
 	include software::samba
+	include software::transmission
 }
