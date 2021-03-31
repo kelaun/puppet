@@ -1,5 +1,5 @@
 node default {
-  include cronpuppet
+  #include cronpuppet
   include software
   include configuration
 }
